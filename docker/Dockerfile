@@ -34,9 +34,9 @@ RUN apt-get update && \
 		libpcl-dev \
 		ros-noetic-pcl-conversions \
 		ros-noetic-rviz && \
-	cd ~/catkin_ws/src
-	# git clone https://github.com/ozakiryota/pc_merge.git && \
-	# cd ~/catkin_ws && \
-	# /bin/bash -c "source /opt/ros/noetic/setup.bash; catkin_make"
+	cd ~/catkin_ws/src && \
+	git clone https://github.com/ozakiryota/pc_merge.git && \
+	cd ~/catkin_ws && \
+	/bin/bash -c "source /opt/ros/noetic/setup.bash; catkin_make"
 ########## Initial position ##########
 WORKDIR /root/catkin_ws/src/pc_merge
